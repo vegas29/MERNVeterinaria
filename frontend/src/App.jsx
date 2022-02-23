@@ -6,6 +6,8 @@ import RecuperarPassword from './components/RecuperarPassword';
 import ConfirmarCuenta from './components/ConfirmarCuenta';
 
 const App = () => {
+
+  
   return (
     <BrowserRouter>
       <Routes>

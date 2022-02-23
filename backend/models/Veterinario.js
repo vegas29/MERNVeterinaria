@@ -5,7 +5,7 @@ import generarId from '../helpers/generarId.js';
 const veterinarioSchema = mongoose.Schema({
     nombre:{
         type: String,
-        requred: true,
+        required: true,
         trim: true
     },
     password:{
