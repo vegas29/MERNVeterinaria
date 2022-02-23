@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Alerta from './Alerta';
 import clienteAxios from '../config/axios';
 
+
 const RecuperarPassword = () => {
 
     const [email, setEmail] = useState('');

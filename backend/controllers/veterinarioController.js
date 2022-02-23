@@ -39,7 +39,7 @@ const registrar = async (req, res)=>{
 const perfil = (req, res)=>{
     
     const {veterinario} = req
-    res.send({perfil: veterinario});
+    res.send(veterinario);
 }
 
 const confirmar = async (req, res)=>{
