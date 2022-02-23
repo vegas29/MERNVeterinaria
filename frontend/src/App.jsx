@@ -4,6 +4,7 @@ import Login from './components/Login';
 import Registrar from './components/Registrar';
 import RecuperarPassword from './components/RecuperarPassword';
 import ConfirmarCuenta from './components/ConfirmarCuenta';
+import NuevoPassword from './components/NuevoPassword';
 
 const App = () => {
 
@@ -15,6 +16,7 @@ const App = () => {
           <Route index element={<Login/>}/>
           <Route path="registrar" element={<Registrar/>}/>
           <Route path="recuperar-password" element={<RecuperarPassword/>}/>
+          <Route path="recuperar-password/:token" element={<NuevoPassword/>}/>
           <Route path="confirmar/:id" element={<ConfirmarCuenta/>}/>
         </Route>
         

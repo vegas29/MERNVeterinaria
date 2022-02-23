@@ -22,6 +22,7 @@ const ConfirmarCuenta = () => {
                 setAlerta({
                     msg: data.msg
                 })
+                
             } catch (error) {
                 setAlerta({
                     msg:error.response.data.msg,
