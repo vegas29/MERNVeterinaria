@@ -8,6 +8,8 @@ import RecuperarPassword from './components/RecuperarPassword';
 import ConfirmarCuenta from './components/ConfirmarCuenta';
 import NuevoPassword from './components/NuevoPassword';
 import AdministrarPacientes from './components/AdministrarPacientes';
+import CambiarPassword from './components/CambiarPassword';
+import EditarPerfil from './components/EditarPerfil';
 
 import { AuthProvider } from './context/AuthProvider';
 import { PacientesProvider } from './context/PacientesProvider';
@@ -30,6 +32,8 @@ const App = () => {
 
             <Route path="/admin" element={<RutaProtegida/>}>
               <Route index element={<AdministrarPacientes/>}/>
+              <Route path='perfil' element={<EditarPerfil/>}/>
+              <Route path='cambiar-password' element={<CambiarPassword/>}/>
             </Route>
           </Routes>  
         </PacientesProvider>  
